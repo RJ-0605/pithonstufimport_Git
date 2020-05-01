@@ -1,0 +1,24 @@
+>>> import vote
+>>> from vote import *
+>>> kwame=VotersID("banana","bread")
+>>> kwame.serial
+2470
+
+>>> kwame._get_next_serial()
+2471
+>>> kwame.VotersID._get_next_serial()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'VotersID' object has no attribute 'VotersID'
+>>> 
+
+
+
+
+
+>>> kwame=VotersID._get_index_serial_increment()
+
+
+
+
+

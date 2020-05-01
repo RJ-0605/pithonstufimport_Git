@@ -1,14 +1,37 @@
 
 class VotersID:
 
-    next_serial=2469
+#  Most fundamental changes occur here before merged with master branch 
+    next_serial=None 
 
     @classmethod
 
     def _get_next_serial(cls):
+
+        
+        if cls.next_serial is None:
+            
+
+            cls.next_serial=1
+            return cls.next_serial
+            
         result=cls.next_serial
         cls.next_serial += 1
-        # return result  we will only add this when we wantit to run automatically
+        
+        
+        return result 
+
+        
+
+
+
+
+
+
+
+
+       
+        # return result  we will only add this when we want it to run automatically
         # i am adding this text because i am running test on changes with github
        #  hello we will be gerting you some chicken
        # checking to see if main branch affects branch help
