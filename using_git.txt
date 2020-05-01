@@ -76,7 +76,7 @@ git branch -d localBranchName
 use -d when the branch has been merged with master branch 
 
 
-use -D when the branch has been merged with master branch
+use -D when the branch has not been merged with master branch
 
 
 
