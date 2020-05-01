@@ -63,3 +63,23 @@ $ git add –A
 $ git commit –m "Some commit message"
 $ git checkout master
 $ git merge new-branch
+
+
+**********************************************************************************
+
+to delete a branch 
+
+*****************************************
+// delete branch locally
+git branch -d localBranchName
+
+use -d when the branch has been merged with master branch 
+
+
+use -D when the branch has been merged with master branch
+
+
+
+
+// delete branch remotely
+git push origin --delete remoteBranchName
