@@ -12,16 +12,16 @@ class VotersID:
         # i am adding this text because i am running test on changes with github
        #  hello we will be gerting you some chicken
        # checking to see if main branch affects branch help
-
+        return result
     
     @classmethod
     def create_empty(cls,owner_code):
 
         return cls (owner_code,contents=None)
 
-    @classmethod
-    def create_with_items(cls,owner_code,items):
-        return cls (owner_code,contents=list(items) )
+    # @classmethod
+    # def create_with_items(cls,owner_code,items):
+    #    return cls (owner_code,contents=list(items) )
 
 
     def __init__(self,owner_code,contents):

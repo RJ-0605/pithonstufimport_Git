@@ -7,13 +7,13 @@ class VotersID:
 
     def _get_index_serial_increment(cls):
         
-        nonlocal index_serial
+        
 
-        if index_serial is None:
+        if cls.index_serial is None:
             
 
-            index_serial=1
-            return None
+            cls.index_serial=1
+            return cls.index_serial
 
         cls.index_serial += 1
         result=cls.index_serial
