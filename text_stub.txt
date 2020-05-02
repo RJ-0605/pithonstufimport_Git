@@ -12,6 +12,13 @@ Traceback (most recent call last):
 AttributeError: 'VotersID' object has no attribute 'VotersID'
 >>> 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> serious
 >>> kwame=VotersID._get_index_serial_increment()
 
 
