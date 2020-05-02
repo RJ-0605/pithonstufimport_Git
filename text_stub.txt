@@ -1,6 +1,10 @@
 >>> import vote
 >>> from vote import *
 
+<<<<<<< HEAD
+=======
+***********************************************************************
+>>>>>>> serious
 new session but similarities seen in diferent sessions
 >>> from clssmthd import *
 
@@ -37,8 +41,17 @@ new session but similarities seen in diferent sessions
 >>> kwame._get_next_serial()
 8
 >>> 
+<<<<<<< HEAD
 
 
+=======
+>>> kwadjo=VotersID()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: __init__() missing 2 required positional arguments: 'owner_code' and 'contents'
+
+******************************************************************************************
+>>>>>>> serious
 
 
 
@@ -53,10 +66,10 @@ AttributeError: 'VotersID' object has no attribute 'VotersID'
 
 
 
-
 >>> kwame=VotersID._get_index_serial_increment()
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 
+>>> from statc_clssmthd import *
 
-
-
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
