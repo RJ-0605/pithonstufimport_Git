@@ -1,8 +1,51 @@
 >>> import vote
 >>> from vote import *
+
+***********************************************************************
+new session but similarities seen in diferent sessions
+>>> from clssmthd import *
+
 >>> kwame=VotersID("banana","bread")
 >>> kwame.serial
 2470
+
+>>> kofi=VotersID("berries","cake")
+>>> kofi.serial
+1
+>>> kofi=VotersID("berries","cake")
+>>> kwame.serial
+1
+>>> kwame.serial
+1
+>>> kofi=VotersID("berries","cake")
+>>> kofi=VotersID("berries","cake")
+>>> kofi.serial
+4
+>>> kofi.serial
+4
+>>> Ama=VotersID("berries","cake")
+>>> Ama.serial
+5
+>>> 
+>>> kwame._get_next_serial()
+6
+>>> kwame._get_next_serial()
+7
+>>> kwame.serial
+1
+>>> kwame.serial
+1
+>>> kwame._get_next_serial()
+8
+>>> 
+>>> kwadjo=VotersID()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: __init__() missing 2 required positional arguments: 'owner_code' and 'contents'
+
+******************************************************************************************
+
+
 
 >>> kwame._get_next_serial()
 2471
@@ -15,10 +58,10 @@ AttributeError: 'VotersID' object has no attribute 'VotersID'
 
 
 
-
 >>> kwame=VotersID._get_index_serial_increment()
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 
+>>> from statc_clssmthd import *
 
-
-
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
