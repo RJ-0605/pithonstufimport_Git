@@ -14,10 +14,11 @@ class VotersID:
 
             cls.next_serial=1
             return cls.next_serial
-            
-        result=cls.next_serial
-        cls.next_serial += 1
+
+        else:
+            cls.next_serial += 1
         
+        result=cls.next_serial
         
         return result 
 
