@@ -4,7 +4,7 @@ class VotersID:
 #  Most fundamental changes occur here before merged with master branch 
     next_serial=None 
 
-    personal_infodata=None
+    
 
     @classmethod
 
@@ -41,7 +41,9 @@ class VotersID:
         return result
 
     @classmethod
-    def compile_userdata(cls,personal_info,age )
+    def compile_userdata(cls,personal_info,age ):
+
+        return 
 
 
 
@@ -59,11 +61,15 @@ class VotersID:
     @classmethod
     def create_empty(cls,personal_infodata):
 
-        return cls (age,personal_infodata=list())
+        return cls (age,personal_infodata=None,date_of_birth)
 
-    # @classmethod
-    # def create_with_items(cls,owner_code,items):
-    #    return cls (owner_code,contents=list(items) )
+    @classmethod
+    def create_with_items(cls,date_of_birth,items):
+
+        personal_infodata=list(items)
+        
+
+        return cls (owner_code,personal_infodata )
 
 #    items can store most personal information in a list and can be called from there 
 #    or assigned to a variable in the future for the instance or for the staticmethods
