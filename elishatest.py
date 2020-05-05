@@ -60,16 +60,24 @@ class VotersID:
     @staticmethod
     def get_data(x):
             
-         # x   is the personal_infodata
+    
         print (x)
 
-       
+        j=None
+        if j is None:
+
+            j= list()
+
+        else:
+            for q in j :
+                if q==x:
+
+                    return print("this name already exists, please dont try to cheat the system")
+
 
         print ("enter date in this format ,dd/mm/yyyy")
         prompt = ">"
         date_of_birth=input(prompt)
-
-        j=list()
         j.append(date_of_birth)
 
         

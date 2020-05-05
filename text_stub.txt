@@ -41,17 +41,8 @@ new session but similarities seen in diferent sessions
 >>> kwame._get_next_serial()
 8
 >>> 
-<<<<<<< HEAD
 
 
-=======
->>> kwadjo=VotersID()
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: __init__() missing 2 required positional arguments: 'owner_code' and 'contents'
-
-******************************************************************************************
->>>>>>> serious
 
 
 
@@ -73,3 +64,12 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 >>> from statc_clssmthd import *
 
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+
+>>> from test import *
+>>> kofi=VotersID("bread","67")
+bread
+enter date in this format ,dd/mm/yyyy
+>06/05/1992
+['06/05/1992']
