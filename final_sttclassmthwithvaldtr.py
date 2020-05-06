@@ -1,6 +1,7 @@
 class VotersID:
     next_serial=None
 
+    #   next time try to use cache and see how that goes 
     agestatus=None
 
     j=None
