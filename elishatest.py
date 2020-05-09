@@ -187,6 +187,7 @@ class VoterAssetsA(VotersID):
         if height<heightlimit :
             raise ValueError("your age is too small go and find your daddy")
 
+
         self.height=height
        
 
