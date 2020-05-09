@@ -123,7 +123,7 @@ git rm <filename> --cache
 
 
 
-for git configuration on laptop 
+for git configuration on laptop .
 
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
