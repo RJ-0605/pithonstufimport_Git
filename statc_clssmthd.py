@@ -4,7 +4,7 @@ class VotersID:
     agestatus=None
 
     @staticmethod
-    def compile_userdata(arg1,arg2,serial):
+    def compile_userdata(arg1,arg2):
        
         print ('lets begin somewhere, what do you think')
 
@@ -85,4 +85,4 @@ class VotersID:
         self.age=age
         
 
-        self.compile_userdata=VotersID.compile_userdata( personal_infodata,age,serial=VotersID._get_next_serial())
+        self.compile_userdata=VotersID.compile_userdata( personal_infodata,age)

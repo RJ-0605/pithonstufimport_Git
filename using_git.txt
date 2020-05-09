@@ -118,3 +118,25 @@ git rm -r <dirname>
 If we want to remove a file from the repository but keep it on disk, say we forgot to add it to our .gitignore file then use --cache:
 
 git rm <filename> --cache
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+
+for git configuration on laptop 
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+for global access 
+
+git config --global user.name "testuser"
+git config --global user.email "testuser@example.com"
+
+
+''''''''''''''''''''''''''''''
+for specified access 
+
+git config  user.name "testuser"
+git config  user.email "testuser@example.com"
+
+''''''''''''''''''''''''''''''''''''
