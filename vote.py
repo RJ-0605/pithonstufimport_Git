@@ -42,8 +42,8 @@ class VotersID:
     #    return cls (owner_code,contents=list(items) )
 
 
-    def __init__(self,date_of_birth,village_born,parents_name,age):
-      self.date_of_birth=date_of_birth
+    def __init__(self,village_born,parents_name,age):
+     # self.date_of_birth=date_of_birth
       self.village_born=village_born
-      self.age=age
+      self.age=int(age)
       self._getvoters_IDno=VotersID._getvoters_IDno()     
