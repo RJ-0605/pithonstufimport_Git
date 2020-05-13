@@ -73,3 +73,6 @@ bread
 enter date in this format ,dd/mm/yyyy
 >06/05/1992
 ['06/05/1992']
+
+
+>>> adjoa=VoterAssetsA.create_empty("boffrot","43",["jeans","eggs","23","freshdoe"],2)

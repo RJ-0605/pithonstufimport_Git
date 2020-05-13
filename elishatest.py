@@ -10,10 +10,12 @@ class VotersID:
 
 
 # seperate class to learn the use of mutators and accessors
+
+
     @classmethod
-    def create_empty(cls,personal_infodata,agelist):
+    def create_withlist(cls,personal_infodata,agelist,*args,**kwargs):
         
-        return cls(personal_infodata,otherinfos=list(agelist))
+        return cls(personal_infodata,otherinfos=list(agelist),*args,**kwargs)
 
 
 
@@ -70,7 +72,7 @@ class VotersID:
         result=cls.next_serial
         
         
-        return print(result)
+        return result
 
 
     @classmethod
@@ -155,10 +157,12 @@ class VotersID:
         
         
 
-        self.compile_userdata=VotersID.compile_userdata( personal_infodata,age)
+        self.compile_userdata( personal_infodata,age)
 
 
-
+######  Barnabas  was here , demonstrating some concepts   ######################### 
+##########   this is linked to helloClass ()  the hello class is inheriting and overiding some things in the super class #####################
+# which in this case is   VotersIDsupport     #########
 
 class VotersIDsupport(VotersID):
 
@@ -166,15 +170,19 @@ class VotersIDsupport(VotersID):
     
     @staticmethod
     def compile_userdata(arg1,arg2):
+     #   super().compile_userdata(arg1,arg2)
         print("this is personal_infodata " + arg1)
         print ('this is the age'+ arg2)
+
+    def __init__(self,arg1, arg2):
+       compile_userdata(arg1,arg2)
 
 
 
 
 class VoterAssetsA(VotersID):
 
-    heightlimit=3
+    heightlimit=5
 
     @staticmethod
     def asset_maker(personal_infodata,age):
@@ -184,7 +192,7 @@ class VoterAssetsA(VotersID):
     def __init__(self,personal_infodata,age,otherinfos,height):
         super().__init__(personal_infodata,age,otherinfos)
 
-        if height<heightlimit :
+        if height<VoterAssetsA.heightlimit :
             raise ValueError("your age is too small go and find your daddy")
 
 
@@ -192,6 +200,21 @@ class VoterAssetsA(VotersID):
         self.height=height
        
 
+######  Barnabas  was here , demonstrating some concepts   ######################### 
+##########   this is linked to helloClass ()  the hello class is inheriting and overiding some things in the super class #####################
+# which in this case is   VotersIDsupport     #########
     
 
+class helloClass(VotersIDsupport):
+    @staticmethod
+    def compile_userdata(arg1,arg2):
+    
+        print("helloClass name " + arg1)
+        print ('helloClass age'+ arg2)
+
+
+    def __init__(self):
+        print("hello...") 
+        self.compile_userdata("dog","2")
+        super().compile_userdata("dog","2")
 
