@@ -1,3 +1,4 @@
+#         Using the template method in the subclasses to prevent unnecesary repeating of oneself
 
 class VotersID:
 
