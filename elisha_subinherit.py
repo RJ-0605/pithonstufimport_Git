@@ -58,9 +58,12 @@ class VotersID:
     def __init__(self,personal_infodata,otherinfos,length):
         self.personal_infodata=personal_infodata
         self.length=length
+        # remember to remove the chicken just for a test
 
+       
         self.otherinfos=otherinfos
         self.serial=VotersID._get_next_serial()  
+        
 
 
 # >>> from elisha_subinherit import *
@@ -114,7 +117,7 @@ class VotersA(VotersID):
 
        
 
-
+        # setting a value to the setter at hte beginning, validating ths setter at the instanciation of the class
         self.celsius=celsius
 
         
@@ -182,6 +185,8 @@ class VotersB(VotersA):
     def celsius(self,value):
         if not(VotersB.Min_celsius<=value):
           raise ValueError("Temperature too cold ") 
+
+        # this is the object of the setter function being wrapped for celsius setter
         VotersA.celsius.fset(self,value)
 
 
@@ -192,6 +197,7 @@ class VotersB(VotersA):
   #        raise ValueError("Temperature out of range ") 
    #     self._celsius=value
 
+# because VotersA.Max_celsius could have been many hierarchies of classes up and we will have to write all that
 
 
 
